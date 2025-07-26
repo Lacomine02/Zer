@@ -225,7 +225,7 @@ nav{
     width: 1200px;
     height:70vh;
     padding: 16px;
-    margin: 250px auto 90px auto;
+    margin: 150px auto auto auto;
     gap: 100px;
 }
 .container-infos{
@@ -410,8 +410,11 @@ nav{
 .bxl-python{color:#c32ec9}
 .bxl-django{color:#69bcbc}
 
-.section-skills{flex-wrap: wrap;}
-.section-skills{width: 1600px;}
+.section-skills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .text{white-space: nowrap;}
 .container-radials{
@@ -422,10 +425,9 @@ nav{
     flex-wrap: wrap;
 }
 .container1{
-    width:600px;
+    width:700px;
     height:6;
     padding: 0px 90px 0px 90px;
-    margin-left:120px;
 }
 
 .heading1{
@@ -853,13 +855,22 @@ nav{
 .footer-linkedin{font-size: 18px;}
 
                                                     /* footer */
-footer{margin-top:30px;}
+footer{margin-top:3rem;}
 
 
 
                                                  /* Responsive */
 
 /* Pour les laptops (1440px et moins) */
+
+@media screen and (min-width: 1360px) and (max-width: 1800px){
+
+    .section-projects{
+        width: 100%;
+        padding: 16px 150px 16px 150px;
+    }
+} 
+
 @media screen and (max-width: 1440px) {
     .picture{
         width: 400px;
@@ -1376,3 +1387,8 @@ footer{margin-top:30px;}
     footer{margin-top: 80px;}
 }
 
+@supports (-webkit-touch-callout: none) {
+  .container-infos-picture {
+    margin: 400px auto;
+  }
+}
