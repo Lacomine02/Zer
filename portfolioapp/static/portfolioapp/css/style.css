@@ -223,9 +223,9 @@ nav{
                                                         /* main */
 .container-infos-picture, .section-about-me, .section-projects{
     width: 1200px;
-    height:70vh;
     padding: 16px;
     margin: 150px auto auto auto;
+    padding-bottom: 150px;
     gap: 100px;
 }
 .container-infos{
@@ -565,6 +565,15 @@ nav{
         opacity: 1;
     }
 }
+svg {
+  width: 100%;
+  height: auto;
+  max-width: 182px;
+  display: block;
+  margin: auto;
+}
+
+
 .radial-bars{
     width: 35%;
     flex-wrap: wrap;
@@ -865,8 +874,14 @@ footer{margin-top:3rem;}
         width: 100%;
         padding: 16px 150px 16px 150px;
     }
+      .container-radials{height:60vh}
 } 
 
+@media screen and (max-width: 1550px){
+    .section-about-me-picture{
+    padding: 16px 180px 50px 180px;
+  }
+}
 @media screen and (max-width: 1440px) {
     .picture{
         width: 400px;
@@ -883,13 +898,8 @@ footer{margin-top:3rem;}
   .container-about-me-picture {
     gap: 80px;
   }
-  .section-about-me-picture{
-    padding: 16px 280px 50px 280px;
-  }
-  .section-skills {
-    max-width: 1200px;
-    margin: 70px auto;
-  }
+ 
+  
 
   .container1 {
     margin-left: 0;
@@ -912,7 +922,8 @@ footer{margin-top:3rem;}
   }
 
   .who p {
-    font-size: 22px;
+    font-size: 20px;
+
   }
 
   .mini-description p {font-size: 18px;}
@@ -951,6 +962,9 @@ footer{margin-top:3rem;}
   .info-1{
     font-size: 14px;
   }
+    .container-radials{height:auto}
+
+
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1300px){
@@ -969,13 +983,41 @@ footer{margin-top:3rem;}
   .section-projects{width: 100%;}
 
   .project-name{font-size: 26px;}
-  
 }
 @media screen and (min-width: 1025px) and (max-width:1700px){
      footer{margin-top: 6rem;}
+     .picture{
+        width: 350px;
+        height: 350px;
+     }
+     .container-infos-picture{width: 75%;}
+     .name{font-size: 33px;}
+
+}
+
+
+@media screen and (min-width: 810px) and (max-width: 1024px) {
+
+    
+  .container-infos-picture {
+    margin: 400px auto 0px auto;
+  }
+
+
+
+}
+@media screen and (min-width: 769px) and (max-width: 1440px){
+    .container1{
+        margin-top: 50px;
+    }
+
+    .container-radials{
+        gap: 30px;
+    }
+
 }
 /* Pour les tablettes */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 700px) and (max-width: 1024px) {
 
   nav {
     flex-direction: row;
@@ -994,7 +1036,7 @@ footer{margin-top:3rem;}
     align-items: center;
     gap: 30px;
     width: 90%;
-    margin: 200px auto;
+    margin: 400px auto 0px auto;
     height: 50vh;
     padding: 0;
   }
@@ -1012,6 +1054,7 @@ footer{margin-top:3rem;}
 
   .section-skills{
         justify-content: center;
+        padding-bottom: 100px;
   }
   .section-about-me-picture {
     flex-direction: column;
@@ -1042,14 +1085,12 @@ footer{margin-top:3rem;}
     width: 90%;
   }
 
-  .container-radials{height:38vh;}
+  .container-radials{height:auto;}
 
   .radial-bars {
     justify-content: center;
     gap: 24px;
   }
-
-  .container1{padding:16px 50px;}
 
   .about-me-title {
     font-size: 44px;
@@ -1109,16 +1150,7 @@ footer{margin-top:3rem;}
   .switch-light, .sep-resume-cv{display: none;}
 }
 
-@media screen and (min-width: 810px) and (max-width: 1024px) {
 
-    
-  .container-infos-picture {
-    margin: 300px auto 0px auto;
-  }
-
-
-
-}
 
 
 
@@ -1132,7 +1164,7 @@ footer{margin-top:3rem;}
 
 /* Version mobile */
 /* large */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     
     .mini-description p{text-align: center;}
     .sep{margin-bottom: 10px;}
@@ -1152,6 +1184,10 @@ footer{margin-top:3rem;}
         align-items: center;
     }
 
+    .list-icons, .container-more-contact{
+        display: flex;
+        justify-content: center;
+    }
  
     .menu-toggle {
         display: block;
@@ -1170,8 +1206,8 @@ footer{margin-top:3rem;}
         flex-direction: column-reverse;
         align-items: center;
         gap: 30px;
-        margin-top: 29vh;
         width: 100%;
+
     }
 
     .container-infos {
@@ -1260,7 +1296,16 @@ footer{margin-top:3rem;}
 }
 
 
+@media screen and (min-width: 578px) and (max-width:699px){
+    .name{
+        font-size: 30px;
+    }
+    .who p {
+        display: flex;
+        justify-content: center;
 
+  }
+}
 @media screen and (max-width: 576px) {
   nav{padding-left: 16px;}
   .name {
@@ -1314,16 +1359,14 @@ footer{margin-top:3rem;}
   footer p {font-size: 14px;}
 }
 
-@media screen and (max-width: 576px) and (min-height:900px){
+/* @media screen and (max-width: 576px) and (min-height:900px){
     .container-infos-picture {
         margin-top: 25vh;
     }
-}
+} */
 
 /* petit */
 @media screen and (max-width: 400px) {
-
-    .container-infos-picture{margin-top: 31vh;}
     .picture{
         width: 220px;
         height: 220px;
