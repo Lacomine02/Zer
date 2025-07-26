@@ -1,0 +1,4 @@
+- fond: #2b2a33
+- purple text: #a14bf3, #6046c4, #8121bc, (last)#c644cb
+
+- yellow text: #fd881e, #feb321, #ffbd3f

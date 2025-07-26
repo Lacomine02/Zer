@@ -1,0 +1,50 @@
+<header>
+    <nav>
+        <div class="nav-header">
+            <div class="container-web-title hidden horizontal">
+                <a href="" class="portfolio"><h1>Port<span>Folio</span></h1></a>
+            </div>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <!-- Sidebar mobile menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                     <a href="{% url 'portfolio:download'%}" class="download">
+                        <div class="container-cv-phone">
+                            <p>Download CV</p>
+                        </div>
+                     </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Menu normal pour grand écran -->
+        <ul class="list-nav-links hidden horizontal">
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="container-sep-cv-light hidden horizontal">
+            <div class="switch-light">My Resume</div>
+            <div class="sep-resume-cv">|</div>
+            <a href="{% url 'portfolio:download'%}" class="download">
+                <div class="container-cv">
+                    <p>Download CV</p>
+                </div>
+            </a>
+        </div>
+    </nav>
+</header>

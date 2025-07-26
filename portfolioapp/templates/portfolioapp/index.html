@@ -1,0 +1,278 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="{% static 'portfolioapp/css/style.css' %}">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script defer src="{% static 'portfolioapp/js/app.js' %}"></script>
+</head>
+<body>
+    {% include 'portfolioapp/include/header.html'%}
+    <main>
+        <div class="container-infos-picture">
+            <div class="container-infos hidden horizontal">
+                <ul class="list-infos">
+                    <li class="mini-description"><p >Hello i'm</p></li>
+                    <li><h1 class="name">Ladjouze Nadjib</h1></li>
+                    <li class="who"><div class='animated-text'><p class='developer-text'>And I'm a <span></span></p></div></li>
+                    <div class="sep"></div>
+                    <li class="mini-description"><p>Passionate about image processing and web development, my goal is to design innovative solutions by leveraging advanced algorithms and machine learning techniques. I am fully committed to building strong skills in image processing, which I integrate into high-performance web applications tailored to meet specific client needs.</p></li>
+                    <div class="sep"></div>
+                    <li class="parent-list-icons">
+                        <ul class="list-icons">
+                            <li><div class="container-linkedin"><a href="https://www.linkedin.com/in/nadjib-ilyes-ladjouze-65a93525a" target="_blank"><i class="fab fa-linkedin"></i></a></div></li>
+                            <li><div class="container-github"><a href="https://github.com/Lacomine02" target="_blank"><i class="fab fa-github"></i></a></div></li>
+                        </ul>
+                   </li>
+                   <li>
+                    <div class="container-more-contact">
+                        <a href="#about" class="about"><div class="container-more hidden ">
+                            <p>About me</p>
+                        </div></a>
+
+                        <a href="#contact" class="about"><div class="container-contact hidden ">
+                            <p>Contact me</p>
+                        </div></a>
+                    </div>
+                        
+                   </li>
+                </ul>
+            </div>
+
+            <div class="container-picture hidden vertical">
+                <div class="picture"></div>
+            </div>
+        </div>
+
+        <section class="section-about-me-picture" id="about">
+            <h1 class="about-me-title">About Me</h1>
+            <div class="container-about-me-picture">
+                <div class="container-picture">
+                    <div class="picture-about"></div>
+                </div>
+                <div class="container-about-me">
+                    <p class="full">Full Stack Developer</p>
+                    <div class="sep"></div>
+                  <p class="bio">
+                    I am <strong>Nadjib Ilyes LADJOUZE</strong>, born on November 15, 2002, in Algeria. I hold a Master's degree in <strong>Intelligent Information Systems (SII)</strong> from <strong>USTHB</strong>. I am a passionate <strong>Full Stack Developer</strong> with over 3 years of experience in web development and advanced technologies. Throughout my projects, I’ve had the opportunity to work on modern front-end interfaces as well as back-end systems, from development to production deployment. My skills span a range of technologies, including <strong>Django</strong>, <strong>React</strong>, <strong>JavaScript</strong>, <strong>HTML/CSS</strong>, <strong>Python</strong>, and <strong>MySQL</strong>. Always determined and motivated, I am constantly seeking new technological challenges and striving to apply my skills to innovative projects.
+                </p>
+
+                </div>
+            </div>
+        </section>
+
+        <h1 class="about-me-title" id="skills">My Skills</h1>
+         <section class="section-skills">
+          
+            <div class="container1">
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="Technical-bars">
+                    <div class="bar"><i class="bx bxl-html5"></i>
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar"><i class="bx bxl-css3"></i>
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar"><i class="bx bxl-javascript"></i>
+                        <div class="info">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="progress-line js">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar"><i class="bx bxl-python"></i>
+                        <div class="info">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar"><i class="bx bxl-django"></i>
+                        <div class="info">
+                            <span>Django</span>
+                        </div>
+                        <div class="progress-line django">
+                            <span></span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="container1 hidden">
+                <h1 class="heading1">Proffesional Skills</h1>
+                <div class="container-radials">
+                    <div class="radial-bars">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Creativity</div>
+                    </div>
+
+
+                    <div class="radial-bars">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">75%</div>
+                        <div class="text text2">Speaking</div>
+                    </div>
+
+                    <div class="radial-bars">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">75%</div>
+                        <div class="text text3">Logic</div>
+                    </div>
+
+                    <div class="radial-bars">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">80%</div>
+                        <div class="text">TeamWork</div>
+                    </div>
+                
+               
+                </div>
+               
+            </div>
+        </section>
+
+
+
+        <section class="section-projects" id="projects">
+            <h1 class="about-me-title">My Projects</h1>
+
+            <div class="projects">
+                {% for project in projects %}
+                    <div class="element">
+                        <h1 class="project-name">{{project.name}}</h1>
+                        <div id="openModal"class="img-project project-1 hidden vertical" style="background-image: url('{{ project.get_first_image.path.url}}')" data-images='[
+                                                {% for img in project.get_all_images %}
+                                                    "{{ img.path.url }}"{% if not forloop.last %},{% endif %}
+                                                {% endfor %}    
+                                               ]'>
+                            <div class="layer">
+                                <h5>{{project.name}}</h5>
+                                <h5>Date of Completion: {{project.date_completion}}</h5>
+                                <h5>See More</h5>
+                                <a href="#"><i class="bx bx-link-external"></i></a>
+                            </div>
+                        </div>
+                    
+                        <div class="container-boxes">
+                            {% for stat in project.get_all_stats %}
+                                            <div class="info-1"><p>{{stat.stat}}</p></div>
+                        
+                            {% endfor %}
+                        </div>
+                        <div class="container-description">
+                            <p>{{project.description}}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </section>
+
+        
+        <div id="modalOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+            background-color:rgba(0,0,0,0.5); z-index:999;">
+        </div>
+        <div id="modalContent" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%);
+            background:white; padding:20px; border-radius:8px; z-index:1000; max-height:100vh; overflow:auto;">
+            <div class="full-image">
+                    <div class="container-btns">
+                            <button class="left"><i class="triangle-right">&#9668;</i></button>
+                            <button class="right"><i class="triangle-right">&#9658;</i></button>
+                    </div>
+                </div>
+                <button onclick="closeModal()" class="cancel">Annuler</button>
+        </div>
+    
+
+        <section class="section-contact" id="contact">
+            <h1 class="about-me-title contact-title">Contact Me</h1>
+            <div class="container-email-linkedin">
+            <p class="contact-text">Feel free to reach out for any collaboration, project, or opportunity.</p>
+            <div class="container-mail-linkedin">
+                <div class="container-icon-mail">
+                    <i class="fas fa-envelope"></i>
+                    <p>Nadjib.ladjouze@gmail.com</p>
+          
+                </div>
+
+                <div class="container-icon-mail">
+                    <a href="https://www.linkedin.com/in/nadjib-ilyes-ladjouze-65a93525a" target="_blank"><i class="fab fa-linkedin footer-linkedin" ></i></a>
+                    <p>Nadjib-Ilyes-Ladjouze</p>
+                </div>
+            </div>
+        
+        
+        </section>
+
+        <footer>
+            <div class="container-web-title">
+                <h1>Port<span>Folio</span></h1>
+            </div>
+            <p>Copyright <span>&copy;</span> PortFolio <span>2025</span>. All rights Reserved.</p>
+        </footer>
+    </main>
+
+ 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggle = document.getElementById("menu-toggle");
+            const mobileMenu = document.getElementById("mobile-menu");
+            toggle.addEventListener("click", (e) => {
+            e.stopPropagation(); // Empêche la fermeture immédiate
+            mobileMenu.classList.add("active");
+            });
+
+            document.addEventListener("click", (e) => {
+            if (mobileMenu.classList.contains("active") && !mobileMenu.contains(e.target) && e.target !== toggle) {
+                mobileMenu.classList.remove("active");
+            }
+            });
+
+            const links = document.querySelectorAll(".mobile-nav-links a");
+            links.forEach(link => {
+            link.addEventListener("click", () => {
+                mobileMenu.classList.remove("active");
+            });
+            });
+        });
+    </script>
+
+    <script src="{% static 'portfolioapp/js/script.js'%}"></script>
+</body>
+</html>
