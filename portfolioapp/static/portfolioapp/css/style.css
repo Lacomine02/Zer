@@ -1359,11 +1359,7 @@ footer{margin-top:3rem;}
   footer p {font-size: 14px;}
 }
 
-/* @media screen and (max-width: 576px) and (min-height:900px){
-    .container-infos-picture {
-        margin-top: 25vh;
-    }
-} */
+
 
 /* petit */
 @media screen and (max-width: 400px) {
@@ -1424,6 +1420,6 @@ footer{margin-top:3rem;}
 
 @supports (-webkit-touch-callout: none) {
   .container-infos-picture {
-    margin: 400px auto 0 auto;
+    margin: 200px auto 0 auto;
   }
 }
