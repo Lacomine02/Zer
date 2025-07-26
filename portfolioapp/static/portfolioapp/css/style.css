@@ -1420,6 +1420,6 @@ footer{margin-top:3rem;}
 
 @supports (-webkit-touch-callout: none) {
   .container-infos-picture {
-    margin: 200px auto 0 auto;
+    margin: 100px auto 0px auto;
   }
 }
