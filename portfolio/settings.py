@@ -28,7 +28,13 @@ SECRET_KEY = 'django-insecure-i14vf(dj&-3)ax!2zajhhth02o35201vmqe8v$8a=tpfq39h1z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['portfolio-h1sn.onrender.com']
+import os
+
+ALLOWED_HOSTS = [
+    'portfolio-h1sn.onrender.com',
+    os.environ.get('RENDER_EXTERNAL_HOSTNAME', '')
+]
+
 
 
 
