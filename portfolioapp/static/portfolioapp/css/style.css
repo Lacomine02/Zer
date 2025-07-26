@@ -730,7 +730,6 @@ nav{
 .info-1{
     text-align: center;
     background-color: #2b2a33;
-    height: 4vh;
     border-radius: 50px;
     padding: 10px;
     font-weight: 600;
@@ -856,9 +855,6 @@ nav{
 
                                                     /* footer */
 footer{margin-top:3rem;}
-
-
-
                                                  /* Responsive */
 
 /* Pour les laptops (1440px et moins) */
@@ -1252,7 +1248,6 @@ footer{margin-top:3rem;}
 
     .project-name{font-size: 22px;}
     .contact-text{text-align: center;}
-    footer{margin-top: 40px;}
 
       .left, .right {
         width: 30px;
@@ -1365,7 +1360,6 @@ footer{margin-top:3rem;}
         font-size: 17px;
     }
     .container-infos-picture{margin-top: 240px;}
-    footer{margin-top: 50px;}
 
 }
 
@@ -1384,11 +1378,10 @@ footer{margin-top:3rem;}
     .section-skills{padding-bottom:100px}
     .info-1, .info-2, .info-3{padding: 6px;}
 
-    footer{margin-top: 80px;}
 }
 
 @supports (-webkit-touch-callout: none) {
   .container-infos-picture {
-    margin: 400px auto;
+    margin: 400px auto 0 auto;
   }
 }
